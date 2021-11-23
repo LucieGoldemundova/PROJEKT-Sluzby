@@ -15,7 +15,7 @@ body {
   background-color: #FAFAFA;
 }
 
-/*styly pro mobilní verzi webu, max. 640px*/
+/*styly pro mobilní verzi webu, max. 639px*/
 
 .cestovatel {
   width: 100%;
@@ -114,4 +114,49 @@ h2 {
 .sluzby-delegatu-karta p {
   margin: 30px 20px 20px 20px;
   font-size: 13px;
+}
+
+/*verze pro tablet 640-1099px*/
+@media screen and (min-width:640px) {
+  .cestovatel {
+    max-width: 400px;
+  }
+
+  .flexbox-pro-tlacitka {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    justify-content: center;
+  }
+
+  .tlacitko-o-nas1,
+  .tlacitko-o-nas2 {
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+  .tlacitko-o-nas1 {
+    margin-right: 20px;
+  }
+
+  .flexbox-sluzby-ck {
+    display: flex;
+  }
+
+  .sluzby-ck-karta {
+    display: block;
+  }
+
+  .ikona {
+    margin: 45px auto 20px auto;
+    display: block;
+  }
+
+  .flexbox-sluzby-delegatu {
+    display: flex;
+  }
+
+  .sluzby-delegatu-karta {
+    display: block;
+  }
 }
