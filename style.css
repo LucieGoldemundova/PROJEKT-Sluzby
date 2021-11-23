@@ -160,3 +160,99 @@ h2 {
     display: block;
   }
 }
+
+/*verze pro PC od 1100px a víc*/
+@media screen and (min-width:1100px) {
+  body {
+    max-width: 1040px;
+    position: relative;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*styly pro sekci O nás*/
+  .o-nas {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  .cestovatel {
+    order: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 430px;
+  }
+
+  .kontejner-obsah-o-nas {
+    margin-top: 70px;
+    margin-right: 90px;
+    margin-left: 0;
+    width: 490px;
+  }
+
+  .kontejner-obsah-o-nas h1,
+  .kontejner-obsah-o-nas p {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .flexbox-pro-tlacitka {
+    justify-content: left;
+  }
+  
+  /*styly pro sekci Služby CK*/
+  .sluzby-ck {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  .obsah-sluzby-ck {
+    order: 1;
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 430px;
+  }
+
+  .obsah-sluzby-ck h2,
+  .obsah-sluzby-ck p {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .flexbox-sluzby-ck {
+    width: 550px;
+    margin: 0;
+    justify-content: space-between;
+    
+  }
+
+  .sluzby-ck-karta,
+  .sluzby-delegatu-karta {
+    margin: 0;
+    flex: 0 0 calc((100% - 40px) / 3);
+    
+    
+  }
+  /*styly pro sekci Služby delegátů*/
+  .sluzby-delegatu {
+    display: flex;
+  }
+
+  .obsah-sluzby-delegatu {
+    width: 430px;
+    margin-top: 40px
+  }
+
+  .flexbox-sluzby-delegatu {
+    width: 550px;
+    margin-top: 0;
+    justify-content: space-between; 
+  }
+
+  .obsah-sluzby-delegatu h2,
+  .obsah-sluzby-delegatu p {
+    text-align: left;
+    margin-left: 0;
+  }
+}
