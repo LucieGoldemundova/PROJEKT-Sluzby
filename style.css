@@ -1,0 +1,117 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+/*Použité barvy:
+#FAFAFA - pozadí stránky
+#000000 - černá, h1, h2
+#8B8B8B - šedá, běžný text
+#407BFF - primární modrá, tlačítko
+#FFFFFF - bílá, texty tlačítek
+#407BFF1F - světle modrá, stín
+*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FAFAFA;
+}
+
+/*styly pro mobilní verzi webu, max. 640px*/
+
+.cestovatel {
+  width: 100%;
+  display: block;
+  max-width: 350px;
+  max-height: 290px;
+  margin: 60px auto 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 40px 25%;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.o-nas p,
+.sluzby-ck p,
+.sluzby-delegatu p {
+  color: #8B8B8B;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.tlacitko-o-nas1 {
+  width: 195px;
+  margin: 30px auto 0 auto;
+  background-color: #407BFF;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 11px 30px;
+  border-radius: 20px;
+  display: block;
+}
+
+.tlacitko-o-nas2 {
+  width: 230px;
+  margin: 10px auto 57px auto;
+  background-color: #8B8B8B;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 11px 30px;
+  border-radius: 20px;
+  display: block;
+}
+
+.kontejner-karty-sluzeb {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.sluzby-ck-karta {
+  display: flex;
+  background-color: #FFFFFF;
+  margin: 15px 20px;
+  font-size: 13px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px #407BFF1F;
+}
+
+/*styly pro ikony, platí pro všechny ikony na stránce*/
+.ikona {
+  width: 45px;
+  height: 40px;
+  margin: 20px;
+}
+
+.sluzby-ck-karta p {
+  margin: 30px 20px 20px 20px;
+  font-size: 13px;  
+}
+
+.kontejner-sluzby-delegatu {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.sluzby-delegatu-karta {
+  display: flex;
+  background-color: #FFFFFF;
+  margin: 15px 20px;
+  font-size: 13px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px #407BFF1F;
+}
+
+.sluzby-delegatu-karta p {
+  margin: 30px 20px 20px 20px;
+  font-size: 13px;
+}
